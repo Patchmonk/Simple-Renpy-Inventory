@@ -9,7 +9,7 @@ screen inventory:
         vbox style style["Inv_vbox"]:
             text "Inventory"style style["Inv_vbox_text"]
             vpgrid cols 7 style style["Inv_grid"]:
-                if slot_count > 30:
+                if slot_count > 21:
                     draggable True mousewheel True scrollbars "vertical" 
                 else:
                     draggable False mousewheel False
