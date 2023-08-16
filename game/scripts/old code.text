@@ -1,0 +1,47 @@
+screen inventory:
+    modal True
+    window:
+        background "#03030394"
+        xsize 1400
+        ysize 800
+        xalign 0.5
+        yalign 0.7
+ 
+        imagebutton style style["Close_btn"]:
+            idle "Close"
+            hover "Close_hover"
+            action Hide("inventory")     
+       
+        vbox:
+            text "Inventory" xpos 5 ypos -5
+       
+             
+            # Conditional argument for activating and deactivating mouse scroll.
+            if slot_count > 30:
+                vpgrid cols 7 spacing 5 draggable True mousewheel True scrollbars "vertical":
+                    for slot in range(slot_count):
+                    
+                        frame:
+                            maximum(155, 155)
+                            if slot < len(inventory):
+                                background Image("images/inventory/inventory_hud/slot_bg.png") xalign 0.5 yalign 0.5
+                                add Image("images/inventory/" + inventory[slot] + ".png", xalign=0.5, yalign=0.5)
+                                $ inv_item_name = inventory[slot].replace('_', ' ')
+                                text inv_item_name style style["inv_item_name"]
+                                
+                            else:
+                                background Image("images/inventory/inventory_hud/slot_bg.png") xalign 0.5 yalign 0.5
+            else:
+                vpgrid cols 7 spacing 5 draggable False mousewheel False:
+                    for slot in range(slot_count):
+                        frame:
+                            maximum(155, 155)
+                            if slot < len(inventory):
+                                background Image("images/inventory/inventory_hud/slot_bg.png") xalign 0.5 yalign 0.5
+                                add Image("images/inventory/" + inventory[slot] + ".png", xalign=0.5, yalign=0.5)
+                                $ inv_item_name = inventory[slot].replace('_', ' ')
+                                text inv_item_name style style["inv_item_name"]
+                                
+                            else:
+                                background Image("images/inventory/inventory_hud/slot_bg.png") xalign 0.5 yalign 0.5
+            
