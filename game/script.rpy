@@ -9,7 +9,7 @@ define e = Character("Eileen")
 # The game starts here.
 
 default inventory = []
-default slot_count = 56
+default slot_count = 21
 # The game starts here.
 
 label start:
