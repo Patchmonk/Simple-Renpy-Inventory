@@ -1,5 +1,4 @@
-# Simple-Renpy-Inventory
-# Inventory System
+# # Simple Renpy Inventory
 
 This is a simple inventory system that allows users to store and manage items.
 
