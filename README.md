@@ -1,6 +1,12 @@
 # # Simple Renpy Inventory
 
-This is a simple inventory system that allows users to store and manage items.
+I specifically created this project because I wanted to learn more about Renpy. I originally got the idea of the simple inventory system from iceorfire.com After reading their tutorial, I was super excited, so I made my own version of it and improved it. Because the inventory system is based on a simple dictionary, it’s easy to handle for beginners. You don’t have to worry about all those complex inventory systems out there. This is a good starting point for anyone who wants to gain experience developing games. While it may be simple, it’s powerful enough for a simple game. I also created an advanced version of the inventory system which is based on the object-oriented method. If you’re interested, please check out my other repositories. Thanks!
+
+ 
+
+![Screenshot 2023-08-16 210459](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/8ed36737-4066-471f-a2ee-002d094ec2be)
+
+![Screenshot 2023-08-16 210624](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/138d4ac6-c7e7-42fa-8588-4145facf64e0)
 
 ## Features
 
@@ -20,9 +26,11 @@ This is a simple inventory system that allows users to store and manage items.
 3. If you want to change the folder structure based on your own preference please make sure you modify the screen code and define the folder location otherwise the inventory system will break.
 
 ## Usage
+If you want to use all the features of the simple inventory I highly recommend you check the demo script.rpy file. In there, you will find the basic uses of the inventory system.
+
 To modify the slot counts in the inventory, change the variable default slot_count. For example, if you want to give more slots to the player, you can add seven more slots to the game 
 while maintaining the grid structure. After increasing the slot count and adding seven more slots to the inventory, the default slot_count will be equal to 28.
-To add or remove items you can see the example demo code inside the script.rpy file
+
 To add an item to the inventory, for example, you can define it like this: $ inventory.append("Apple") as long as you have the Apple icon inside your designated folder able to create a new item in your game.
 To remove an item from the inventory, $ inventory.remove("Log")
  
