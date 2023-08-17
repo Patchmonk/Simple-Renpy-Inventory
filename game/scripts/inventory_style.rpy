@@ -7,7 +7,7 @@ style Inventory_frame is frame:
 
 
 style Inv_close_btn:
-    xpos 1120
+    xpos 1115
     ypos 5
     
 style Inv_vbox is vbox:

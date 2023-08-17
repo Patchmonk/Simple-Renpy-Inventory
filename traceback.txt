@@ -1,33 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 35, in script
-    e "You've created a new Ren'Py game."
-  File "game/scripts/inventory_screen.rpy", line 1, in execute
-    screen inventory:
-  File "game/scripts/inventory_screen.rpy", line 1, in execute
-    screen inventory:
-  File "game/scripts/inventory_screen.rpy", line 3, in execute
-    frame style style["Inventory_frame"]:
-  File "game/scripts/inventory_screen.rpy", line 9, in execute
-    vbox style style["Inv_vbox"]:
-  File "game/scripts/inventory_screen.rpy", line 11, in execute
-    vpgrid cols 7 style style["Inv_grid"]:
-  File "game/scripts/inventory_screen.rpy", line 11, in keywords
-    vpgrid cols 7 style style["Inv_grid"]:
-  File "game/scripts/inventory_screen.rpy", line 12, in keywords
-    if slot_count > 21:
-  File "game/scripts/inventory_screen.rpy", line 12, in keywords
-    if slot_count > 21:
-  File "game/scripts/inventory_screen.rpy", line 13, in <module>
-    draggable True mousewheel True scrollbars "vertical" style style[inv_scrollbar]
-NameError: name 'inv_scrollbar' is not defined
+While loading <renpy.display.im.Image object ('images/inventory/Compass.png') at 0x000000000571ec70>:
+  File "game/script.rpy", line 103, in script
+    "Hey there, big thanks for diving into my project with such enthusiasm."
+OSError: Couldn't find file 'images/inventory/Compass.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 35, in script
-    e "You've created a new Ren'Py game."
+  File "game/script.rpy", line 103, in script
+    "Hey there, big thanks for diving into my project with such enthusiasm."
   File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\ast.py", line 930, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\exports.py", line 1473, in say
@@ -42,43 +24,75 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 3579, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 4052, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\screen.py", line 476, in visit_all
-    callback(self)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 4052, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\screen.py", line 487, in per_interact
-    self.update()
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\screen.py", line 680, in update
-    self.screen.function(**self.scope)
-  File "game/scripts/inventory_screen.rpy", line 1, in execute
-    screen inventory:
-  File "game/scripts/inventory_screen.rpy", line 1, in execute
-    screen inventory:
-  File "game/scripts/inventory_screen.rpy", line 3, in execute
-    frame style style["Inventory_frame"]:
-  File "game/scripts/inventory_screen.rpy", line 9, in execute
-    vbox style style["Inv_vbox"]:
-  File "game/scripts/inventory_screen.rpy", line 11, in execute
-    vpgrid cols 7 style style["Inv_grid"]:
-  File "game/scripts/inventory_screen.rpy", line 11, in keywords
-    vpgrid cols 7 style style["Inv_grid"]:
-  File "game/scripts/inventory_screen.rpy", line 12, in keywords
-    if slot_count > 21:
-  File "game/scripts/inventory_screen.rpy", line 12, in keywords
-    if slot_count > 21:
-  File "game/scripts/inventory_screen.rpy", line 13, in <module>
-    draggable True mousewheel True scrollbars "vertical" style style[inv_scrollbar]
-NameError: name 'inv_scrollbar' is not defined
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 4172, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 2779, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\screen.py", line 731, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1336, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1107, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1849, in render
+    cwidth, cheight = sizeit('c', width, height, 0, 0)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1846, in sizeit
+    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
+  File "render.pyx", line 318, in renpy.display.render.render_for_size
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\viewport.py", line 710, in render
+    surf = renpy.display.render.render(c, cw, ch, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1336, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\im.py", line 676, in render
+    return cache.get(self, render=True)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\im.py", line 330, in get
+    surf = image.load()
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\im.py", line 803, in load
+    raise e
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\im.py", line 757, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/inventory/Compass.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 Simple Renpy Inventory 1.0
-Thu Aug 17 19:29:03 2023
+Thu Aug 17 23:30:02 2023

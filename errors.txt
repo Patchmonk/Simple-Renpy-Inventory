@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/inventory_style.rpy", line 35: style property scrollbar_borders is not known.
-    scrollbar_borders 10 
-                     ^
+File "game/script.rpy", line 96: Line is indented, but the preceding return statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    e "You've created a new Ren'Py game."
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Aug 17 19:28:21 2023
+Thu Aug 17 21:47:37 2023

@@ -8,6 +8,7 @@ screen HUD():
         # Display the weekday, time of day, and current hours
     
         # text " Gold : [gold]" xpos 10 ypos 20 
+        text " Gold : [gold]" xpos 10 ypos 20 
         imagebutton:
             xpos 0 ypos 0
             idle "Backpack"
