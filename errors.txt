@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/inventory_style.rpy", line 35: style property scrollbar_borders is not known.
+    scrollbar_borders 10 
+                     ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Thu Aug 17 19:28:21 2023

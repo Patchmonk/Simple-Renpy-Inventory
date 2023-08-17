@@ -1,7 +1,7 @@
 style Inventory_frame is frame:
     background  "#030003b9"
     xsize 1160
-    ysize 550
+    ysize 560
     xalign 0.5
     yalign 0.4
 
@@ -15,10 +15,10 @@ style Inv_vbox is vbox:
     yalign 0.5
  
 
-style Inv_vbox_text is text:
-    size 30
-    bold True
-    # pos (0,-20) 
+style Inv_vbox_title is text:
+    size 35
+    color Color((255, 255, 255, 255))
+    pos (0,-10) 
  
 style Inv_grid is vpgrid:
     spacing 5
@@ -31,5 +31,6 @@ style Inv_item_name is text:
     color Color((100, 245, 4, 255))
     pos (0,118) 
 
- 
-   
+style inv_scrollbar is scrollbar: 
+    xsize 1100
+    ysize 450

@@ -5,12 +5,12 @@ screen inventory:
             idle "Close"
             hover "Close_hover"
             action Hide("inventory")     
-        
+        default slot_count = 210
         vbox style style["Inv_vbox"]:
-            text "Inventory"style style["Inv_vbox_text"]
+            text "Inventory"style style["Inv_vbox_title"]
             vpgrid cols 7 style style["Inv_grid"]:
                 if slot_count > 21:
-                    draggable True mousewheel True scrollbars "vertical" 
+                    draggable True mousewheel True scrollbars "vertical" style style["inv_scrollbar"]
                 else:
                     draggable False mousewheel False
                 for slot in range(slot_count):

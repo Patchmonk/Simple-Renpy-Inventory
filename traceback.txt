@@ -1,0 +1,84 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 35, in script
+    e "You've created a new Ren'Py game."
+  File "game/scripts/inventory_screen.rpy", line 1, in execute
+    screen inventory:
+  File "game/scripts/inventory_screen.rpy", line 1, in execute
+    screen inventory:
+  File "game/scripts/inventory_screen.rpy", line 3, in execute
+    frame style style["Inventory_frame"]:
+  File "game/scripts/inventory_screen.rpy", line 9, in execute
+    vbox style style["Inv_vbox"]:
+  File "game/scripts/inventory_screen.rpy", line 11, in execute
+    vpgrid cols 7 style style["Inv_grid"]:
+  File "game/scripts/inventory_screen.rpy", line 11, in keywords
+    vpgrid cols 7 style style["Inv_grid"]:
+  File "game/scripts/inventory_screen.rpy", line 12, in keywords
+    if slot_count > 21:
+  File "game/scripts/inventory_screen.rpy", line 12, in keywords
+    if slot_count > 21:
+  File "game/scripts/inventory_screen.rpy", line 13, in <module>
+    draggable True mousewheel True scrollbars "vertical" style style[inv_scrollbar]
+NameError: name 'inv_scrollbar' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 35, in script
+    e "You've created a new Ren'Py game."
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\exports.py", line 1473, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\screen.py", line 476, in visit_all
+    callback(self)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\screen.py", line 487, in per_interact
+    self.update()
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/scripts/inventory_screen.rpy", line 1, in execute
+    screen inventory:
+  File "game/scripts/inventory_screen.rpy", line 1, in execute
+    screen inventory:
+  File "game/scripts/inventory_screen.rpy", line 3, in execute
+    frame style style["Inventory_frame"]:
+  File "game/scripts/inventory_screen.rpy", line 9, in execute
+    vbox style style["Inv_vbox"]:
+  File "game/scripts/inventory_screen.rpy", line 11, in execute
+    vpgrid cols 7 style style["Inv_grid"]:
+  File "game/scripts/inventory_screen.rpy", line 11, in keywords
+    vpgrid cols 7 style style["Inv_grid"]:
+  File "game/scripts/inventory_screen.rpy", line 12, in keywords
+    if slot_count > 21:
+  File "game/scripts/inventory_screen.rpy", line 12, in keywords
+    if slot_count > 21:
+  File "game/scripts/inventory_screen.rpy", line 13, in <module>
+    draggable True mousewheel True scrollbars "vertical" style style[inv_scrollbar]
+NameError: name 'inv_scrollbar' is not defined
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.1.23060707
+Simple Renpy Inventory 1.0
+Thu Aug 17 19:29:03 2023
