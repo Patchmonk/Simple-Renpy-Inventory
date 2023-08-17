@@ -5,7 +5,7 @@ screen inventory:
             idle "Close"
             hover "Close_hover"
             action Hide("inventory")     
-        default slot_count = 210
+        default slot_count = 21
         vbox style style["Inv_vbox"]:
             text "Inventory"style style["Inv_vbox_title"]
             vpgrid cols 7 style style["Inv_grid"]:
