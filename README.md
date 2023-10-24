@@ -7,18 +7,22 @@ The beauty of this inventory system lies in its simplicity. It's built upon the 
 Don't let its simplicity fool you, though. Beneath that user-friendly exterior, it holds a surprising amount of power, well-suited for crafting engaging simple games. And guess what? I didn't stop at the basics. I also rolled out an advanced version, fueled by the object-oriented approach. You're invited to delve into my other repositories to check out the goodies.
 
 In the grand tapestry of learning and creation, this project is but a thread. If you're seeking to expand your knowledge and experience, consider this venture a stepping stone. Here's to growth, innovation, and the joy of creation. Cheers!
- 
-![Screenshot 2023-08-18 035418](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/75dc5468-86f6-4921-9235-ef7d1ee9cef7)
 
-![Screenshot 2023-08-18 035510](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/0e1e212d-2b1b-4b78-a8a9-b2aebc3008ba)
+
+ ![1](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/e176ed5e-9ee5-4413-ac6f-3f5885e32278)
+
+
+ ![2](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/d669dc11-bbb8-4ddc-ac82-7003768710e0)
+
+
 
 ## Features
 
 * by default currently we have 21 slots in the inventory but you can change the slot count by modifying the default slot_count variable.
 * Items can be added, or removed.
 * The inventory can be customized with different themes and colors.
-* This simple inventory system has the capability to activate the dynamic scroll bar if it exists more than 21 slots.
 * You can increase or decrease the slot based on your game needs.
+* You can use a conditional argument to check whether a certain item is in the inventory or not.
 
 ## Requirements
 * Ren'Py 8.0 or higher
