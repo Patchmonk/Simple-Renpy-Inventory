@@ -1,12 +1,16 @@
-# # Simple Renpy Inventory
+## Simple Renpy Inventory
 
-I specifically created this project because I wanted to learn more about Renpy. I originally got the idea of the simple inventory system from iceorfire.com After reading their tutorial, I was super excited, so I made my own version of it and improved it. Because the inventory system is based on a simple dictionary, it’s easy to handle for beginners. You don’t have to worry about all those complex inventory systems out there. This is a good starting point for anyone who wants to gain experience developing games. While it may be simple, it’s powerful enough for a simple game. I also created an advanced version of the inventory system which is based on the object-oriented method. If you’re interested, please check out my other repositories. Thanks!
+I embarked on this project driven by my eagerness to explore the realms of Ren'Py. The spark that ignited the creation of our simple yet marvelous inventory system came from none other than iceorfire.com. Their tutorial caught my attention, and I couldn't help but get swept up in a wave of excitement. With that inspiration as my guide, I crafted my own rendition, injecting it with a healthy dose of enhancements.
 
+The beauty of this inventory system lies in its simplicity. It's built upon the solid foundation of a straightforward empty list., making it an ideal starting point for those new to the scene. Say goodbye to the complexities that often accompany other inventory systems – this one's tailor-made for beginners looking to gain a foothold in game development.
+
+Don't let its simplicity fool you, though. Beneath that user-friendly exterior, it holds a surprising amount of power, well-suited for crafting engaging simple games. And guess what? I didn't stop at the basics. I also rolled out an advanced version, fueled by the object-oriented approach. You're invited to delve into my other repositories to check out the goodies.
+
+In the grand tapestry of learning and creation, this project is but a thread. If you're seeking to expand your knowledge and experience, consider this venture a stepping stone. Here's to growth, innovation, and the joy of creation. Cheers!
  
+![Screenshot 2023-08-18 035418](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/75dc5468-86f6-4921-9235-ef7d1ee9cef7)
 
-![Screenshot 2023-08-16 210459](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/8ed36737-4066-471f-a2ee-002d094ec2be)
-
-![Screenshot 2023-08-16 210624](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/138d4ac6-c7e7-42fa-8588-4145facf64e0)
+![Screenshot 2023-08-18 035510](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/0e1e212d-2b1b-4b78-a8a9-b2aebc3008ba)
 
 ## Features
 
@@ -45,6 +49,12 @@ To remove an item from the inventory, $ inventory.remove("Log")
 ## Contact
 
 If you have any questions or feedback, please open an issue on the project's GitHub repository.
+
+## Graphics resources
+
+pixiv.net/en/users/12597768
+
+arcsine-technologies.itch.io/veggie-pack-volume-i
 
 ## License
 This project is licensed under the MIT License.
