@@ -1,98 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/inventory/Compass.png') at 0x000000000571ec70>:
-  File "game/script.rpy", line 103, in script
-    "Hey there, big thanks for diving into my project with such enthusiasm."
-OSError: Couldn't find file 'images/inventory/Compass.png'.
+While processing the padding property of style Inv_vbox_title:
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+TypeError: 'float' object is not subscriptable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 103, in script
-    "Hey there, big thanks for diving into my project with such enthusiasm."
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\character.py", line 1003, in do_display
-    display_say(who,
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1336, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1107, in render
-    surf = render(d, width - x, rh, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1849, in render
-    cwidth, cheight = sizeit('c', width, height, 0, 0)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1846, in sizeit
-    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
-  File "render.pyx", line 318, in renpy.display.render.render_for_size
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\viewport.py", line 710, in render
-    surf = renpy.display.render.render(c, cw, ch, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 1336, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\im.py", line 330, in get
-    surf = image.load()
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\im.py", line 803, in load
-    raise e
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\display\im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/inventory/Compass.png'.
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\main.py", line 670, in main
+    run(restart)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\main.py", line 74, in run
+    renpy.translation.init_translation()
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\translation\__init__.py", line 593, in init_translation
+    renpy.store._init_language() # type: ignore
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\translation\__init__.py", line 690, in change_language
+    i()
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+  File "style.pyx", line 796, in renpy.style.rebuild
+  File "style.pyx", line 789, in renpy.style.build_styles
+  File "style.pyx", line 710, in renpy.style.build_style
+  File "style.pyx", line 707, in renpy.style.build_style
+  File "gen3-static/style_functions.pyx", line 1417, in style_functions.padding_property
+  File "include/style_common.pxi", line 30, in style_functions.index_0
+TypeError: 'float' object is not subscriptable
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 Simple Renpy Inventory 1.0
-Thu Aug 17 23:30:02 2023
+Tue Oct 24 21:16:15 2023

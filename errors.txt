@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 96: Line is indented, but the preceding return statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    e "You've created a new Ren'Py game."
-    ^
+File "game/scripts/inventory_screen.rpy", line 13: 'spacing' is not a keyword argument or valid child of the frame statement.
+    spacing 5
+           ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Aug 17 21:47:37 2023
+Tue Oct 24 21:46:59 2023

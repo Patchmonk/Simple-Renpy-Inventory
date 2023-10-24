@@ -5,8 +5,6 @@ screen HUD():
         yminimum 100
         has hbox
         
-        # Display the weekday, time of day, and current hours
-    
         # text " Gold : [gold]" xpos 10 ypos 20 
         text " Gold : [gold]" xpos 10 ypos 20 
         imagebutton:
