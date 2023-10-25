@@ -45,8 +45,8 @@ To remove an item from the inventory, $ inventory.remove("Log")
 
 ## Bugs
 
-* When you add more than 21 slots to your inventory, the inventory system will dynamically activate the scroll bar. As a result, your inventory screen may look slightly different.
-  If you encounter similar problems, feel free to modify the styles.
+* The simple inventory is stable now, I managed to track down all the known bugs and fix them.
+* If you find any new bugs please report.
 
  
 
