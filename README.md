@@ -1,12 +1,8 @@
 ## Simple Renpy Inventory
 
-I embarked on this project driven by my eagerness to explore the realms of Ren'Py. The spark that ignited the creation of our simple yet marvelous inventory system came from none other than iceorfire.com. Their tutorial caught my attention, and I couldn't help but get swept up in a wave of excitement. With that inspiration as my guide, I crafted my own rendition, injecting it with a healthy dose of enhancements.
+Driven by a desire to explore Ren'Py, I embarked on this project. The idea for our simple yet marvelous inventory system was sparked by a tutorial from iceorfire.com that captured my interest. Inspired, I created my own version, enhanced with additional features. The charm of this inventory system lies in its simplicity. Built on the solid foundation of a straightforward empty list, it is an ideal starting point for beginners. It avoids the complexities often associated with other inventory systems, making it perfect for those new to game development.
 
-The beauty of this inventory system lies in its simplicity. It's built upon the solid foundation of a straightforward empty list., making it an ideal starting point for those new to the scene. Say goodbye to the complexities that often accompany other inventory systems – this one's tailor-made for beginners looking to gain a foothold in game development.
-
-Don't let its simplicity fool you, though. Beneath that user-friendly exterior, it holds a surprising amount of power, well-suited for crafting engaging simple games. And guess what? I didn't stop at the basics. I also rolled out an advanced version, fueled by the object-oriented approach. You're invited to delve into my other repositories to check out the goodies.
-
-In the grand tapestry of learning and creation, this project is but a thread. If you're seeking to expand your knowledge and experience, consider this venture a stepping stone. Here's to growth, innovation, and the joy of creation. Cheers!
+Despite its simplicity, it possesses a surprising amount of power, suitable for creating engaging simple games. Additionally, I developed an advanced version using an object-oriented approach. You are welcome to explore my other repositories for more. This project is just a small part of the grand scheme of learning and creation. If you'd like to expand your knowledge and experience, please consider this venture a stepping stone. Here's to growth, innovation, and the joy of creation. Cheers!
 
 
  ![1](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/e176ed5e-9ee5-4413-ac6f-3f5885e32278)
