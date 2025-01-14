@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/HUD.rpy", line 6: 'size' is not a keyword argument or valid child of the frame statement.
-    size 60 1920
-        ^
+File "game/script.rpy", line 135: Line is indented, but the preceding hide statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    jump End
+    ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Tue Jan 14 18:01:43 2025
+Tue Jan 14 23:19:04 2025
