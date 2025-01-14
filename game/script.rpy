@@ -2,6 +2,8 @@
 image Grassland = "Grassland.png"
 image Grassland 2 = "Grassland_2.png"
 image Forest = "Forest.png"
+
+image ss1 = "ss1.png"
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -11,7 +13,7 @@ define e = Character("Eileen")
 # The game starts here.
 
 default inventory = []
-default gold = 0
+default gold = 100
 # The game starts here.
 
 label start:
@@ -19,7 +21,7 @@ label start:
     # Introduction: A Simple Inventory System for Your Game
 
     "Hey there! Welcome to my simple inventory demo project."
-    "I cooked up this project with the goal of diving deep into the world of Ren'Py. You know what sparked the idea for this neat inventory system? It was none other than iceorfire.com."
+    "DI cooked up this project with the goal of diving deep into the world of Ren'Py. You know what sparked the idea for this neat inventory system? It was none other than iceorfire.com."
     "Their tutorial got me all hyped up, so I put my own twist on it and polished it and added some new feature while maintaining the simplicity of the original project."
     "My goal is to craft an inventory system that's simple yet powerful, a system that could be seamlessly woven into any simple game."
 
@@ -35,13 +37,14 @@ label start:
     "Today, we're whipping up a slick heads-up display and a snazzy backpack image button that'll whisk us away to the inventory screen."
 
     show screen HUD
+    show ss1
     "Awesome! Look at that snazzy heads-up display and the backpack icon. I bet you're already a pro at this, right? 😄"
     "Give that backpack icon a click!" 
     "Hmm, we've got ourselves an empty inventory. And let's be real, an empty inventory is no party. Time to spice things up!"
     "$ inventory.append('Banana') + adding all other item variables"
     
    
-    
+   
     $ inventory.append("Banana")
     $ inventory.append("Broccoli")
     $ inventory.append("Cabbage")

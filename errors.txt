@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/inventory_screen.rpy", line 13: 'spacing' is not a keyword argument or valid child of the frame statement.
-    spacing 5
-           ^
+File "game/scripts/HUD.rpy", line 6: 'size' is not a keyword argument or valid child of the frame statement.
+    size 60 1920
+        ^
 
-Ren'Py Version: Ren'Py 8.1.1.23060707
-Tue Oct 24 21:46:59 2023
+Ren'Py Version: Ren'Py 8.3.3.24111502
+Tue Jan 14 18:01:43 2025
