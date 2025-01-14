@@ -6,7 +6,7 @@ screen inventory:
             hover "Close_hover"
             action Hide("inventory")
 
-        default slot_count = 21 # The number of slots is set to 21 by default but can be changed by setting the slot_count variable.
+        
 
         vbox style style["Inv_vbox"]:  # This vbox contains the title and the grid of inventory slots.
             frame style style["Inv_title_frame"]:
@@ -30,7 +30,7 @@ screen inventory:
 
                 vpgrid cols 7 style style["Inv_grid"]: # This vpgrid displays the inventory slots.
         
-                    for slot in range(slot_count):  # This loop iterates over all the inventory slots. 
+                    for slot in range(inventory_slot_count):  # This loop iterates over all the inventory slots. 
                         
                         frame: # This frame contains the inventory slot item.
                             maximum(155, 155)

@@ -8,6 +8,7 @@ image Screenshot_2 = "Screenshot_2.png"
 image Screenshot_3 = "Screenshot_3.png"
 image Screenshot_4 = "Screenshot_4.png"
 image Screenshot_5 = "Screenshot_5.png"
+image Screenshot_6 = "Screenshot_6.png"
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -17,6 +18,7 @@ define e = Character("Eileen")
 # The game starts here.
 
 default inventory = []
+default inventory_slot_count = 21 # The number of slots is set to 21 by default but can be changed by setting the inventory_slot_count variable.
 default gold = 100
 # The game starts here.
 
@@ -72,6 +74,7 @@ label start:
     $ inventory.append("Potato")
     $ inventory.append("Pumpkin")
     $ inventory.append("Lemon")
+    
     "Let's fill up the inventory with goodies!"
     hide Screenshot_4
 
@@ -80,9 +83,17 @@ label start:
     "Just drop your custom PNG icons into the 'inventory/images/icons' folder and use $ inventory.append('ItemName'). Easy peasy!"
     "Let's talk more about our simple inventory system."
     show Screenshot_2
-    "In this demo, we have 21 available slots. Want more? Just edit the slot variable to add as many slots as you like."
-    "If you exceed 21 slots, the system automatically adds a dynamic scrollbar. How cool is that?"
+    "In this demo, we have 21 available slots. Want more? Just edit the inventory_slot_count variable to add as many slots as you like."
+    "Let's increase the total inventory slots capacity by editing the inventory slot count variable. Increase the slot number to 35 so we have more space to store additional items."
     hide Screenshot_2
+    show Screenshot_6
+    "At this moment, we have seven slots in each row. If we want to increase by two more rows, we need to add 14 more slots. "
+    "Let's do this by editing the inventory slot count variable as follows: $ inventory_slot_count += 14"
+    hide Screenshot_6
+    $ inventory_slot_count += 14
+   
+    show screen inventory
+    "The system now automatically adds a dynamic scrollbar. How cool is that? You can drag the inventory scrollbar and explore the extended slot like a pro!"
     "Now, let's dive into removing items."
     "For instance, I'm not a huge fan of lemons, so..."
 
