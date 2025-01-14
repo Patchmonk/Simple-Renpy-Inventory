@@ -1,42 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing the padding property of style Inv_vbox_title:
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-TypeError: 'float' object is not subscriptable
+While running game code:
+  File "game/script.rpy", line 55, in script call
+    call inventory
+  File "game/script.rpy", line 55, in script call
+    call inventory
+ScriptError: could not find label 'inventory'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\main.py", line 74, in run
-    renpy.translation.init_translation()
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\translation\__init__.py", line 593, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "C:\Users\Sanzid\Desktop\Renpy\renpy-8.1.0-sdk\renpy\translation\__init__.py", line 690, in change_language
-    i()
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-  File "style.pyx", line 796, in renpy.style.rebuild
-  File "style.pyx", line 789, in renpy.style.build_styles
-  File "style.pyx", line 710, in renpy.style.build_style
-  File "style.pyx", line 707, in renpy.style.build_style
-  File "gen3-static/style_functions.pyx", line 1417, in style_functions.padding_property
-  File "include/style_common.pxi", line 30, in style_functions.index_0
-TypeError: 'float' object is not subscriptable
+  File "game/script.rpy", line 55, in script call
+    call inventory
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1414, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 55, in script call
+    call inventory
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'inventory'.
 
 Windows-10-10.0.19045 AMD64
-Ren'Py 8.1.1.23060707
+Ren'Py 8.3.3.24111502
 Simple Renpy Inventory 1.0
-Tue Oct 24 21:16:15 2023
+Tue Jan 14 18:57:15 2025
