@@ -1,6 +1,6 @@
 ﻿# Some default background images
 image Grassland = "Grassland.png"
-image Grassland 2 = "Grassland_2.png"
+image Grassland_2 = "Grassland_2.png"
 image initialise_variables = "initialise the variables.png"
 image Forest = "Forest.png"
 image backpack_arrow = "backpack arrow.png"
@@ -120,6 +120,7 @@ label start:
 
     "So, that's the gist of our simple inventory system. Basic, but it covers the essentials!"
     "Hold up, there's more up my sleeve! Let's dive into checking what's in the inventory and crafting some game-changing features."
+    hide Grassland
     jump Forest
 
 label Forest:
@@ -146,7 +147,7 @@ label Forest:
     jump End
 
 label End:
-    show Grassland2
+    show Grassland_2
     "Thanks for checking out my Simple Inventory System demo!"
     "Before I go, I wish you all the success with your own project. I bet you'll make something even cooler than mine!"
     "When I created this project, I was just a beginner learning the ropes of game development and visual novels."
