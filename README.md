@@ -7,8 +7,9 @@ Despite its simplicity, it possesses a surprising amount of power, suitable for 
 
  ![1](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/e176ed5e-9ee5-4413-ac6f-3f5885e32278)
 
+![screenshot0006](https://github.com/user-attachments/assets/e8185b23-ac08-4db5-80b5-74828171d683)
 
- ![2](https://github.com/Patchmonk/Simple-Renpy-Inventory/assets/7914321/d669dc11-bbb8-4ddc-ac82-7003768710e0)
+ 
 
 
 
