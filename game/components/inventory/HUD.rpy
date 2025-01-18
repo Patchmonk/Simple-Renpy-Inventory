@@ -8,7 +8,7 @@ screen HUD():
         has hbox
         
         # text " Gold : [gold]" xpos 10 ypos 20 
-        text " Gold : [gold]" xpos 5 ypos 15 
+        text " GOLD : [gold]" xpos 5 ypos 15 
         imagebutton:
             xpos 0 ypos 0
             idle "Backpack"
