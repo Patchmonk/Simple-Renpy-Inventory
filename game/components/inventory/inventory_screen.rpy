@@ -35,13 +35,13 @@ screen inventory:
                         frame: # This frame contains the inventory slot item.
                             maximum(155, 155)
                             if slot < len(inventory): # If the slot is not empty, the slot background image will display.
-                                background Image("scripts/inventory/images/gui/slot_bg.png") xalign 0.5 yalign 0.5
-                                add Image("scripts/inventory/images/icons/" + inventory[slot] + ".png", xalign=0.5, yalign=0.5)
+                                background Image("components/inventory/images/gui/slot_bg.png") xalign 0.5 yalign 0.5
+                                add Image("components/inventory/images/icons/" + inventory[slot] + ".png", xalign=0.5, yalign=0.5)
                                 $ Inv_item_name = inventory[slot].replace('_', ' ')
                                 text Inv_item_name style style["Inv_item_name"]
                             else:
                                 # If the slot is empty, the background is displayed.
-                                background Image("scripts/inventory/images/gui/slot_bg.png") xalign 0.5 yalign 0.5
+                                background Image("components/inventory/images/gui/slot_bg.png") xalign 0.5 yalign 0.5
 
 
  

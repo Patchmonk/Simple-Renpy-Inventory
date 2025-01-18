@@ -31,10 +31,10 @@ style Inv_item_name is text:
 
 # Close Icon
 image Close:
-    "scripts/inventory/images/gui/close.png"
+    "components/inventory/images/gui/close.png"
     size(30,30) 
 
 # backpack icon     
 image Close_hover:
-    "scripts/inventory/images/gui/close_hover.png"
+    "components/inventory/images/gui/close_hover.png"
     size(30,30)  

@@ -18,10 +18,10 @@ screen HUD():
 
 # backpack icon  
 image Backpack:
-    "scripts/inventory/images/backpack.png"
+    "components/inventory/images/backpack.png"
     size(60,60) 
     
 image Backpack_Hover:
-    "scripts/inventory/images/backpack_hover.png"
+    "components/inventory/images/backpack_hover.png"
     size(60,60) 
 
