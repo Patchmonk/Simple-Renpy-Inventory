@@ -76,21 +76,26 @@ label start:
     show Screenshot_4
     "For example: $ inventory.append('Banana')"
 
-    $ inventory.append("Banana")
-    $ inventory.append("Broccoli")
-    $ inventory.append("Cabbage")
-    $ inventory.append("Pear")
-    $ inventory.append("Pepper")
     $ inventory.append("Potato")
-    $ inventory.append("Pumpkin")
+    $ inventory.append("Apple")
+    $ inventory.append("Banana")
     $ inventory.append("Lemon")
+    $ inventory.append("Lime")
+    $ inventory.append("Orange")
+    $ inventory.append("Peach")
+    $ inventory.append("Pear")
+    $ inventory.append("Pomegranate")
+    $ inventory.append("Pumpkin")
+    $ inventory.append("Strawberry")
+    $ inventory.append("Watermelon")
+
 
     "Let's fill up that inventory with some goodies!"
-    hide Screenshot_4
+    hide Screenshot_4 
 
     show screen inventory
     "Hooray! Our inventory is now overflowing with items. Adding your custom ones is a breeze! 🍎🥦"
-    "Just drop your custom PNG icons into the 'inventory/images/icons' folder and use $ inventory.append('ItemName'). Easy peasy!"
+    "Just drop your custom PNG icons into the 'components/inventory/images/icons' folder and use $ inventory.append('ItemName'). Easy peasy!"
     "Now, let's chat more about our simple inventory system."
     show Screenshot_2
     "In this demo, we have 21 available slots. Want more? Simply tweak the inventory_slot_count variable to add as many slots as your heart desires."
@@ -139,8 +144,8 @@ label Forest:
         show screen inventory
         "Jackpot! We've got more treasures now. Happy adventuring!"
     else:
-        "No apple? Never fear! Here's a fish instead, because every adventurer needs a snack!"
-        $ inventory.append("Fish")
+        "No apple? Never fear! Here's a Mango instead, because nobody can refuse a tasty delicious mango!"
+        $ inventory.append("Mango")
 
     hide Forest
 

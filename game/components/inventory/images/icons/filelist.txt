@@ -1,0 +1,15 @@
+Amro.png
+Apple.png
+Banana.png
+filelist.txt
+Lemon.png
+Lime.png
+Old icons
+Orange.png
+Peach.png
+Pear.png
+Pomegranate.png
+Pramin.png
+Pumpkin.png
+Strawberry.png
+Watermelon.png
