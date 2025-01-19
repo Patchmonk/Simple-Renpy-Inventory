@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/components/inventory/HUD.rpy", line 11: 'font' is not a keyword argument or valid child of the hbox statement.
-    font "Bokor-Regular"
-        ^
+File "game/script.rpy", line 170: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "Have an awesome day!"
+    ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Sun Jan 19 00:40:25 2025
+Mon Jan 20 01:34:04 2025

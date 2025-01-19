@@ -1,46 +1,29 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 31, in script
-    "Hey there! Welcome to my simple inventory demo project."
-  File "game/script.rpy", line 31, in script
-    "Hey there! Welcome to my simple inventory demo project."
-  File "renpy/common/000window.rpy", line 132, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 75, in _window_show
-    renpy.with_statement(trans)
-Exception: Could not find font 'components/inventory/images/gui/DejaVuSans.ttf'.
+While processing text tag {=my_dissolve} in 'If you find Simple Renpy Inventory useful, please consider giving credit to {b}{color=#FF0000}{=my_dissolve}Patchmonk{/color}{/b}. Thank you!'.:
+  File "game/script.rpy", line 168, in script
+    "If you find Simple Renpy Inventory useful, please consider giving credit to {b}{color=#FF0000}{=my_dissolve}Patchmonk{/color}{/b}. Thank you!"
+Exception: Style 'my_dissolve' does not exist.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\execution.py", line 958, in run_context
-    context.run()
-  File "game/script.rpy", line 31, in script
-    "Hey there! Welcome to my simple inventory demo project."
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/script.rpy", line 31, in script
-    "Hey there! Welcome to my simple inventory demo project."
+  File "game/script.rpy", line 168, in script
+    "If you find Simple Renpy Inventory useful, please consider giving credit to {b}{color=#FF0000}{=my_dissolve}Patchmonk{/color}{/b}. Thank you!"
   File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
     Say.execute(self)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 585, in execute
-    statement_name("say")
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 52, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 132, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 75, in _window_show
-    renpy.with_statement(trans)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\display\core.py", line 1578, in do_with
-    return self.interact(trans_pause=True,
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
   File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\display\core.py", line 2879, in interact_core
@@ -51,10 +34,6 @@ Full traceback:
   File "render.pyx", line 260, in renpy.display.render.render
   File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
     surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\display\transition.py", line 384, in render
-    top = render(self.new_widget, width, height, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
   File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
@@ -79,17 +58,15 @@ Full traceback:
   File "render.pyx", line 260, in renpy.display.render.render
   File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\text\text.py", line 2604, in render
     virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\text\text.py", line 770, in __init__
-    glyphs = ts.glyphs(s, self)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\text\text.py", line 340, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample, self.shaper, self.instance, self.axis)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\text\font.py", line 745, in get_font
-    face = load_face(fn, shaper)
-  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\text\font.py", line 673, in load_face
-    raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'components/inventory/images/gui/DejaVuSans.ttf'.
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\text\text.py", line 733, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "C:\Apps\Renpy\renpy-8.3.3-sdk\renpy\text\text.py", line 1391, in segment
+    style = getattr(renpy.store.style, value)
+  File "style.pyx", line 216, in renpy.style.StyleManager.__getattr__
+  File "style.pyx", line 98, in renpy.style.get_style
+Exception: Style 'my_dissolve' does not exist.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.3.24111502
 Simple Renpy Inventory 1.5
-Sun Jan 19 01:34:21 2025
+Mon Jan 20 01:33:44 2025

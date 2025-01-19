@@ -107,8 +107,7 @@ label start:
     hide Screenshot_6
 
     $ inventory_slot_count += 14
-
-   
+ 
     show screen inventory
     "System's got a new trick up its sleeve a dynamic scrollbar! Fancy, right? Drag it around like a rockstar and show that inventory who's boss!"
     "Alright, let's dive into the inventory's greatest hits! You've nailed adding items, now for the thrilling sequel removing them! Let's roll!"
@@ -151,6 +150,12 @@ label Forest:
     hide Forest
 
     jump End
+# Define the transformation
+transform my_dissolve:
+    alpha 0.0
+    linear 1.0 alpha 1.0
+
+# Use the transformation in your dialogue
 
 label End:
     show Grassland_2
@@ -160,7 +165,8 @@ label End:
     "This project is based on a tutorial. Some features I wanted weren't covered, so I added my own spin to it. I believe you can take this and create something uniquely yours."
     "For more projects, feel free to visit my Git repository or itch.io profile."
     "Wishing you all the best. Consider this project a little gift to help you focus on what matters most: storytelling and artwork."
-    "And don't forget to credit Me and other asset creators details are in the description and the GitHub readme."
+    "If you find Simple Renpy Inventory useful, please consider giving credit to {b}{color=#00ff88}Patchmonk{/color}{/b}. Thank you!"
+
     "Have an awesome day!"
 return
 
