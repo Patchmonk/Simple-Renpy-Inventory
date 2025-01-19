@@ -26,10 +26,10 @@ style Inv_grid is vpgrid:
     
  
 style Inv_item_name is text:
-    size 16
+    size 14
     bold True
     color  "#f3f3f3"
-    pos (0,120) 
+    pos (0,0) 
 
 # Close Icon
 image Close:
