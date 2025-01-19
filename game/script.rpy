@@ -76,7 +76,7 @@ label start:
     show Screenshot_4
     "For example: $ inventory.append('Banana')"
 
-    $ inventory.append("Potato")
+    $ inventory.append("Mango")
     $ inventory.append("Apple")
     $ inventory.append("Banana")
     $ inventory.append("Lemon")
@@ -144,8 +144,9 @@ label Forest:
         show screen inventory
         "Jackpot! We've got more treasures now. Happy adventuring!"
     else:
-        "No apple? Never fear! Here's a Mango instead, because nobody can refuse a tasty delicious mango!"
-        $ inventory.append("Mango")
+        "No apple? No problem! Here's a potato instead because who can resist a tasty, delicious potato? You know it's the underdog of snacks!
+"
+        $ inventory.append("Potato")
 
     hide Forest
 
