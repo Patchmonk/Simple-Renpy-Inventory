@@ -3,10 +3,16 @@
 **Driven by a desire to explore Ren'Py, I embarked on this project. The idea for our simple yet marvelous inventory system was sparked by a tutorial from iceorfire.com that captured my interest. Inspired, I created my own version, enhanced with additional features. The charm of this inventory system lies in its simplicity. Built on the solid foundation of a straightforward empty list, it is an ideal starting point for beginners. It avoids the complexities often associated with other inventory systems, making it perfect for those new to game development.**
 
 **Despite its simplicity, it possesses a surprising amount of power, suitable for creating engaging simple games. Additionally, I developed an advanced version  with more features like unlocking slots stacking items, and much more. You are welcome to explore my other repositories for more. This project is just a small part of the grand scheme of learning and creation. If you'd like to expand your knowledge and experience, please consider this venture a stepping stone. Here's to growth, innovation, and the joy of creation. Cheers!**
+ 
 
----
+![screenshot0009](https://github.com/user-attachments/assets/a9074843-8cbe-4425-842c-41d3b11a33aa)
 
+
+![screenshot0011](https://github.com/user-attachments/assets/5f178dad-c800-468d-8789-3f453cab6ad9)
+ 
 **Features**
+
+
 - Modal inventory screen with a user-friendly frame and image button for closing.
 - Inventory layout organized in a vertical box (`vbox`) with a title.
 - Scrollable viewport with customized vertical scrollbar graphics.
