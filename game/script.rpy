@@ -77,7 +77,6 @@ label start:
     "For example: $ inventory.append('Banana')"
 
     $ inventory.append("Mango")
-    $ inventory.append("Apple")
     $ inventory.append("Banana")
     $ inventory.append("Lemon")
     $ inventory.append("Orange")
@@ -131,18 +130,18 @@ label Forest:
     "Picture this: Your player stumbles across an 'Apple' in the wild. Score!"
 
     $ inventory.append("Apple")
+    
     show screen inventory
     "Congratulations! You've just added an apple to your treasure trove. It's a little win that can sweeten your game experience."
 
     if "Apple" in inventory:
-        "Now that we've snagged the apple, let's go on a spree! Adding 1000 gold coins and a mystical compass to our haul."
+        "Now that we've snagged the apple, let's go on a spree! Adding 1000 gold coins and a Magical Mana Gem to our haul."
         $ gold += 1000
-        $ inventory.append("Compass")
+        $ inventory.append("Mana Gem")
         show screen inventory
         "Jackpot! We've got more treasures now. Happy adventuring!"
     else:
-        "No apple? No problem! Here's a potato instead because who can resist a tasty, delicious potato? You know it's the underdog of snacks!
-"
+        "No apple? No problem! Here's a potato instead because who can resist a tasty, delicious potato? You know it's the underdog of snacks!"
         $ inventory.append("Potato")
 
     hide Forest
