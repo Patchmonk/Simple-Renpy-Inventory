@@ -80,16 +80,14 @@ label start:
     $ inventory.append("Apple")
     $ inventory.append("Banana")
     $ inventory.append("Lemon")
-    $ inventory.append("Lime")
     $ inventory.append("Orange")
     $ inventory.append("Peach")
     $ inventory.append("Pear")
-    $ inventory.append("Pomegranate")
     $ inventory.append("Pumpkin")
     $ inventory.append("Strawberry")
     $ inventory.append("Watermelon")
-
-
+    $ inventory.append("Pomegranate")
+    
     "Let's fill up that inventory with some goodies!"
     hide Screenshot_4 
 
@@ -113,7 +111,7 @@ label start:
     "Alright, let's dive into the inventory's greatest hits! You've nailed adding items, now for the thrilling sequel removing them! Let's roll!"
     "So, let's crack open the inventory and see if there's any junk we can toss out. Any takers?"
     show screen inventory
-    "Wow, we're hoarding a mini farmers' market in here! Bananas, apples, pears, and even potatoes. But, oof, lemons? Hard pass. Let's do some citrus decluttering!"
+    "Wow, we're hoarding a mini farmers' market in here! Bananas, apples, pears, and even Pumpkin. But, oof, lemons? Hard pass. Let's do some citrus decluttering!"
     $ inventory.remove("Lemon")
 
     show Screenshot_5
