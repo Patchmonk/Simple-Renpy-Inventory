@@ -4,6 +4,7 @@
 
 **Despite its simplicity, it possesses a surprising amount of power, suitable for creating engaging simple games. Additionally, I developed an advanced version  with more features like unlocking slots stacking items, and much more. You are welcome to explore my other repositories for more. This project is just a small part of the grand scheme of learning and creation. If you'd like to expand your knowledge and experience, please consider this venture a stepping stone. Here's to growth, innovation, and the joy of creation. Cheers!**
  
+Here is the enhanced version of this inventory if you are interested: [Enhanced Renpy Inventory](https://github.com/Patchmonk/Enhanced-Renpy-Inventory) 
 
 ![screenshot0009](https://github.com/user-attachments/assets/a9074843-8cbe-4425-842c-41d3b11a33aa)
 
