@@ -19,19 +19,12 @@ screen inventory:
                 draggable True
                 mousewheel True
                 scrollbars "vertical"  
-                
                 vscrollbar_xsize 10
-                vscrollbar_ysize 475
+                vscrollbar_ysize 475  
                 vscrollbar_ypos 0
                 vscrollbar_xpos -21
                 vscrollbar_base_bar "components/inventory/images/gui/inv_vscrollbar_base_bar.png" 
                 vscrollbar_thumb "components/inventory/images/gui/inv_vscrollbar_thumb.png"
-              
-
- 
-                # Below two lines of code is to add Some custom scroll bar graphics to avoid the boarding default scroll bar, for now I am going to deactivate it because I don't have any graphics yet for custom scrollbar. just Adding an option if you need that.
-                # vscrollbar_base_bar "gui/qm_vscrollbar_base_bar.png"
-                # vscrollbar_thumb "gui/qm_vscrollbar_thumb.png"
                 vscrollbar_unscrollable "hide"
 
                 vpgrid cols 7 style style["Inv_grid"]: # This vpgrid displays the inventory slots.

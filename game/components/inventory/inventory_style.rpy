@@ -1,7 +1,7 @@
 style Inventory_frame is frame:
     background  "components/inventory/images/gui/inventoryBG.png"
     xsize 1160
-    ysize 570
+    ysize 580
     xalign 0.5
     yalign 0.4
 
