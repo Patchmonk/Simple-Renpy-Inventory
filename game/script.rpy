@@ -4,6 +4,7 @@ image Grassland_2 = "Grassland_2.png"
 image initialise_variables = "initialise the variables.png"
 image Forest = "Forest.png"
 image backpack_arrow = "backpack arrow.png"
+image Screenshot_0 = "Screenshot_0.png"
 image Screenshot_1 = "Screenshot_1.png"
 image Screenshot_2 = "Screenshot_2.png"
 image Screenshot_3 = "Screenshot_3.png"
@@ -11,6 +12,7 @@ image Screenshot_4 = "Screenshot_4.png"
 image Screenshot_5 = "Screenshot_5.png"
 image Screenshot_6 = "Screenshot_6.png"
 image Screenshot_7 = "Screenshot_7.png"
+image Screenshot_8 = "Screenshot_8.png"
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -28,10 +30,17 @@ label start:
     show Grassland
     # Introduction: A Simple Inventory System for Your Game
 
-    "Hey there! Welcome to my simple inventory demo project."
+    "Hey there! Welcome to the tutorial for building a simple inventory system in Ren'Py. 😊"
+    "I'm excited to guide you through this project, where we'll take a look at how to create a simple yet powerful inventory system. This isn't just a demo; it's a full tutorial, where I'll show you how to integrate the system into your own games."
+
+
     "I cooked up this project to dive deep into the world of Ren'Py. You know what sparked the idea for this neat inventory system? It was none other than iceorfire.com inventory tutorial."
     "Their tutorial got me hyped, so I put my own twist on it, polished it, and added some new features while keeping the simplicity of the original project."
-    "My goal? Craft an inventory system that's simple yet powerful a system that can slide seamlessly into any basic game."
+    "My goal with this tutorial is simple: I want to help you create an inventory system that's both easy to use and versatile enough for most Ren'Py games. Whether you're working on a visual novel or an interactive story, you'll have something solid to build on."
+
+    "And I promise you, this won't be one of those boring documentation dumps. I'll walk you through each step with explanations, tips, and tricks that'll make the process smooth and hopefully, a little fun, too!"
+
+
 
     "Here, simplicity reigns supreme. We're rocking a trusty list for our inventory. Add or remove items, and you're golden! No convoluted class-based shenanigans here."
     "Simpler code = fewer bugs. It's the perfect starting point, especially if you're new to coding. You can take this foundation and build something even better."
@@ -45,11 +54,14 @@ label start:
 
     "First things first, we need to set things up!"
     "First drag the component folder in to your game root directory like in the demo project. Next you need to initiate the Default variables."
+    show Screenshot_0
+
+    "The screenshot shows the desired folder structure. Just drag and drop it into your root folder, as demonstrated. It's easy and straightforward."
+    hide Screenshot_0
     show initialise_variables
     "To integrate the inventory into your game, just copy and paste these magic spells er, variables. 🪄"
     hide initialise_variables
-    "Today, we'll conjure up a slick heads-up display and a snazzy backpack button to access the inventory screen. ✨"
-
+    "Let's make a slick heads-up display and a snazzy backpack button to access the inventory screen. ✨"
     show screen HUD
     show backpack_arrow
     "Check out that snazzy HUD and the backpack icon. Bet you feel like a pro already! 😄"
@@ -75,8 +87,13 @@ label start:
     "Step 2: After adding your icon, tell the inventory to include it with a variable."
     show Screenshot_4
     "For example: $ inventory.append('Banana')"
-
-    $ inventory.append("Mango")
+    "If you're scratching your head wondering what's going on, don't worry, it's a piece of cake. Remember the inventory folder with all the icons?"
+    "We're just creating variables named after these icons and telling our inventory that these icons are now officially Inventory items. Easy peasy!"
+    "When creating your own item, it's essential to follow these specific steps. First, place your icons into the designated folder that contains all of my dummy icons. "
+    "Then, create variables using the default Python .append function shown in the screenshot. Like this:  $ inventory.append('Mango') "
+    "It's crucial to name your variables based on your icon names. If you get these steps, we're golden!"
+    "The screenshot clearly shows that numerous icons have been defined. We should now verify if these icons are present in our inventory."
+   
     $ inventory.append("Banana")
     $ inventory.append("Lemon")
     $ inventory.append("Orange")
@@ -86,8 +103,7 @@ label start:
     $ inventory.append("Strawberry")
     $ inventory.append("Watermelon")
     $ inventory.append("Pomegranate")
-    
-    "Let's fill up that inventory with some goodies!"
+     
     hide Screenshot_4 
 
     show screen inventory
@@ -133,6 +149,11 @@ label Forest:
     
     show screen inventory
     "Congratulations! You've just added an apple to your treasure trove. It's a little win that can sweeten your game experience."
+    "For the sake of gameplay, let's create a condition. If you have that mysterious apple, you will be rewarded with extra rewards. Yeah, not very creative, I know. "
+    show Screenshot_8
+    "This is just a simple demonstration to show you how you can trigger event based on inventory items."
+    "As you can see, I'm just tossing in some coins and items to reward the player, but you can hop into a different event or label if you prefer. It's just a simple logic. Easy peasy, right?"
+    hide Screenshot_8
 
     if "Apple" in inventory:
         "Now that we've snagged the apple, let's go on a spree! Adding 1000 gold coins and a Magical Mana Gem to our haul."
@@ -162,7 +183,7 @@ label End:
     "This project is based on a tutorial. Some features I wanted weren't covered, so I added my own spin to it. I believe you can take this and create something uniquely yours."
     "For more projects, feel free to visit my Git repository or itch.io profile."
     "Wishing you all the best. Consider this project a little gift to help you focus on what matters most: storytelling and artwork."
-    "If you find Simple Renpy Inventory useful, please consider giving credit to {b}{color=#00ff88}Patchmonk{/color}{/b}. Thank you!"
+    "If you find Simple Renpy Inventory useful, please consider giving credit to {b}{color=#00ff88}Arham or Patchmonk{/color}{/b}. Thank you!"
 
     "Have an awesome day!"
 return
