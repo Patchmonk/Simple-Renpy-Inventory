@@ -1,8 +1,9 @@
 
+Welcome to my Simple Ren'Py Inventory System! When I first created this project, I was a beginner exploring the Ren'Py engine, and it’s been part of my ongoing learning journey. Inspired by a simple tutorial, I built this system to be straightforward, flexible, and easy to integrate into your games—while also adding my own improvements and creating a version that fits my needs.
 
-**Driven by a desire to explore Ren'Py, I embarked on this project. The idea for our simple yet marvelous inventory system was sparked by a tutorial from iceorfire.com that captured my interest. Inspired, I created my own version, enhanced with additional features. The charm of this inventory system lies in its simplicity. Built on the solid foundation of a straightforward empty list, it is an ideal starting point for beginners. It avoids the complexities often associated with other inventory systems, making it perfect for those new to game development.**
+Starting with a basic, empty list, this system provides a solid foundation for new developers, without the added complexity of more advanced inventory systems. It’s perfect for creating beginner-friendly games.
 
-**Despite its simplicity, it possesses a surprising amount of power, suitable for creating engaging simple games. Additionally, I developed an advanced version  with more features like unlocking slots stacking items, and much more. You are welcome to explore my other repositories for more. This project is just a small part of the grand scheme of learning and creation. If you'd like to expand your knowledge and experience, please consider this venture a stepping stone. Here's to growth, innovation, and the joy of creation. Cheers!**
+I've also developed an advanced version with features like unlockable slots and item stacking. Check out my other repositories for further extensions and improvements. I hope it serves as a helpful resource for others diving into Ren'Py!
  
 Here is the enhanced version of this inventory if you are interested: [Enhanced Renpy Inventory](https://github.com/Patchmonk/Enhanced-Renpy-Inventory) 
 
